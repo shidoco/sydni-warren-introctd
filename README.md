@@ -1,1 +1,3 @@
 # sydni-warren-introctd
+Portfolio Project for Intro to Programming Course with Code the Dream
+Sydni Warren
