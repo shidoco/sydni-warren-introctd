@@ -19,7 +19,7 @@ newFooter.appendChild(copyright);
 
 // Skills
 
-const techSkills = ["Javascript", "HTML", "CSS", "Adobe Photoshop", "Git/Github"]
+const techSkills = ["Javascript", "HTML", "CSS", "Adobe Photoshop", "Git/Github"];
 
 const skillsSection = document.getElementById('Skills');
 
@@ -42,7 +42,7 @@ messageForm.addEventListener('submit', (event) => {
     const messageSection = document.getElementById('messages')
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li')
-    newMessage.innerHTML = "<a href='mailto:${inputEmail}'>${inputName}</a> <span>${inputMessage}</span>"
+    newMessage.innerHTML = `<a href="mailto:${inputEmail}">${inputName}</a> <span>${inputMessage}</span>`
     const removeButton = document.createElement('button');
     removeButton.textContent = 'remove';
     removeButton.type = 'button'
