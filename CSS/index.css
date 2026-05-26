@@ -136,3 +136,9 @@ input[name=usersEmail] {
 textarea[name=usersMessage] {
     margin: 5px 0px 15px 0px;
 }
+
+@media (max-width: 400px) {
+    #LeaveAMessage form {
+        padding: 18px;
+    }
+}
