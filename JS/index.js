@@ -17,14 +17,14 @@ newFooter.appendChild(copyright);
 
 // Skills
 
-techSkills = ["Javascript", "HTML", "CSS", "Adobe Photoshop", "Git/Github"]
+const techSkills = ["Javascript", "HTML", "CSS", "Adobe Photoshop", "Git/Github"]
 
-skillsSection = document.getElementById('Skills');
+const skillsSection = document.getElementById('Skills');
 
-skillsList = skillsSection.querySelector('ul');
+const skillsList = skillsSection.querySelector('ul');
 
-for (i = 0; i < techSkills.length; i++) {
-    skill = document.createElement('ul');
+for (let i = 0; i < techSkills.length; i++) {
+    const skill = document.createElement('li');
     skill.innerHTML = techSkills[i];
     skillsList.appendChild(skill);
 };
