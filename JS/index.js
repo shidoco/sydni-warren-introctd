@@ -1,6 +1,6 @@
 //Footer
 
-const newFooter = document.createElement('div');
+const newFooter = document.createElement('footer');
 newFooter.className = 'footer';
 newFooter.innerHTML = "<footer> <p></p> </footer>"
 
