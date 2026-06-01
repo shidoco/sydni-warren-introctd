@@ -75,6 +75,27 @@ h2 {
     justify-content: space-between;
 }
 
+#Projects {
+    padding: 5px;
+    margin: 20px 0px 5px 0px;
+    background-color: rgba(82, 0, 50, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Projects ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(47, 37, 38);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    list-style-type: none;
+}
+
 
 #Connect {
     padding: 5px;

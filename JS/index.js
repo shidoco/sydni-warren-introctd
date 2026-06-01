@@ -57,3 +57,20 @@ messageForm.addEventListener('submit', (event) => {
     messageList.appendChild(newMessage);
     event.target.reset();
 });
+
+const projectSection = document.getElementById('Projects');
+const projectList = projectSection.querySelector('ul');
+
+fetch('https://api.github.com/users/shidoco/repos')
+.then(response => response.json())
+.then(repositories => {
+    console.log(repositories);
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement('li');
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }  
+})
+.catch(error => console.error('Github fetch error:', error));
+
