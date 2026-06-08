@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0px;
+    background-color: azure;
+    color: black;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav {
+    padding: 10px;
+    background: rgb(48, 48, 124);
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+}
+
+h1 {
+    color: rgb(48, 48, 124);
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(48, 48, 124);
+    text-align: center;
+}
+
+#Buttons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#Temperature {
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(255, 221, 154);
+    border-radius: 7px;
+}
+
+#Precipitation {
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(183, 212, 255);
+    border-radius: 7px;
+}
+
+#weather-data {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#maxs-chances {
+    font-weight: bold;
+}
+
+#mins {
+    font-weight: bold;
+}

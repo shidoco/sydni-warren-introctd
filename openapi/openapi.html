@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Weather API Showcase
+        </title>
+
+        <meta lang="en">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Weather API Project">
+
+        <link href="css/openapi.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <a href="../index.html">Back to Portfolio</a>
+        </nav>
+
+        <h1>What's the weather?</h1>
+
+        <p>This is my first project working with an open API. Here is a website that pulls from the Open-Meteo Weather Forecast API to share condition and temperature data with its users!</p>
+
+        <h2>Weather in Chicago for the next 7 days:</h2>
+
+        <div id="Buttons">
+            <button type="button" id="Temperature">Temperature</button>
+            <button type="button" id="Precipitation">Chance of Rain</button>
+        </div>
+
+        <section id="Weather">
+            <h2></h2>
+            <div id="weather-data">
+                <h2 id="Header1">Highs:</h2>
+                <ol id="maxs-chances">
+    
+                </ol>
+                <h2 id="Header2">Lows:</h2>
+                <ol id="mins">
+    
+                </ol>
+            </div>
+        </section>
+
+        <script src="js/openapi.js"></script>
+    
+    </body>
+</html>
