@@ -13,12 +13,14 @@ body {
 nav {
     padding: 10px;
     background: rgb(48, 48, 124);
-    a:link {
-        color: white;
-    }
-    a:visited {
-        color: white;
-    }
+}
+
+nav a:link {
+    color: white;
+}
+        
+nav a:visited {
+    color: white;
 }
 
 h1 {
