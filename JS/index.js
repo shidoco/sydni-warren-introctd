@@ -22,7 +22,7 @@ newFooter.appendChild(copyright);
 
 // Skills
 
-const techSkills = ["Javascript", "HTML", "CSS", "Adobe Photoshop", "Git/Github"];
+const techSkills = ["Javascript", "HTML", "CSS", "Adobe Creative Suite", "Git/Github"];
 
 const skillsSection = document.getElementById('Skills');
 
