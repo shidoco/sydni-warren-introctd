@@ -18,9 +18,9 @@ nav {
 nav a:link {
     color: white;
 }
-        
+
 nav a:visited {
-    color: white;
+    color: rgb(226, 226, 243);
 }
 
 h1 {
@@ -51,6 +51,7 @@ h2 {
     font-size: 15px;
     background-color: rgb(255, 221, 154);
     border-radius: 7px;
+    
 }
 
 #Precipitation {
@@ -61,18 +62,51 @@ h2 {
     border-radius: 7px;
 }
 
+#Temperature:hover {
+    cursor: pointer;
+}
+
+#Precipitation:hover {
+    cursor: pointer;
+}
+
+#Temperature:active {
+    background-color: rgb(255, 232, 187);
+}
+
+#Precipitation:active {
+    background-color: rgb(209, 227, 255);
+}
+
+#Weather {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 #weather-data {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-#maxs-chances {
-    font-weight: bold;
-}
-
+#maxs-chances,
 #mins {
-    font-weight: bold;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#maxs-chances li,
+#mins li {
+  padding: 8px 12px;
+  background: rgba(48, 48, 124, 0.08);
+  border-radius: 10px;
 }

@@ -23,6 +23,8 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=41.85&longitude=-87.65&da
     return response.json();
 })
 .then(data => {
+    maxHeader.textContent = "Highs: "
+    minHeader.textContent = "Lows: "
     maxHeader.style.display = "inline-block"
     minHeader.style.display = "inline-block"
     weeklyMaxs.innerHTML = '';
@@ -53,7 +55,8 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=41.85&longitude=-87.65&da
     return response.json();
 })
 .then(data => {
-    maxHeader.style.display = "none"
+    maxHeader.textContent = "Chance of Rain: "
+    maxHeader.style.display = "inline-block"
     minHeader.style.display = "none"
     weeklyMaxs.innerHTML = '';
     weeklyMins.innerHTML = '';
