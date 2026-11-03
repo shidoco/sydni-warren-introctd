@@ -198,6 +198,7 @@ h2 {
     margin: 20px 50px 5px;
     padding: 15px;
     border-radius: 8px;
+    width: 100%;
 }
 
 #SubmitButton {
@@ -214,22 +215,27 @@ h2 {
 form[name="leave_message"] {
     padding: 20px;
     border-radius: 8px;
+    width: 100%;
 }
 
 input[name=usersName] {
     margin: 5px 0px 15px 0px;
+    width: 100%;
 }
 
 input[name=usersEmail] {
     margin: 5px 0px 15px 0px;
+    width: 100%;
 }
 
 textarea[name=usersMessage] {
     margin: 5px 0px 15px 0px;
+    width: 100%;
 }
 
 @media (max-width: 400px) {
     #LeaveAMessage form {
         padding: 18px;
+        width: 100%;
     }
 }
