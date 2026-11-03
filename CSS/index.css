@@ -35,6 +35,10 @@ nav ul li a {
 nav a:link {
     color: white;
 }
+
+nav a:link:hover {
+    color: rgb(232, 203, 203);
+}
         
 h1 {
     background-color: rgba(82, 0, 50, 0.3);
@@ -67,7 +71,7 @@ h2 {
     align-items: center;
     padding: 10px;
     border-radius: 8px;
-    margin: 20px auto 5px;
+    margin: 20px 50px 5px;
     background-color: rgb(47, 37, 38);
     text-align: center;
 }
@@ -105,18 +109,16 @@ h2 {
 }
 
 #Projects {
-    padding: 5px;
     margin: 20px 0px 5px 0px;
     background-color: rgba(82, 0, 50, 0.3);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 #Projects ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: rgb(47, 37, 38);
     border-radius: 8px;
     margin: 10px;
@@ -193,8 +195,20 @@ h2 {
     display: flex;
     align-content: center;
     background-color: rgb(47, 37, 38);
-    margin: 20px 0px 5px;
+    margin: 20px 50px 5px;
     padding: 15px;
+    border-radius: 8px;
+}
+
+#SubmitButton {
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    border-style: hidden;
+}
+
+#SubmitButton:hover {
+    background-color: rgb(218, 202, 202);
 }
 
 form[name="leave_message"] {
