@@ -22,7 +22,7 @@ newFooter.appendChild(copyright);
 
 // Skills
 
-const techSkills = ["Javascript", "HTML", "CSS", "React", "Node.js", "Git/Github"];
+const techSkills = ["Javascript", "HTML", "CSS/TailwindCSS", "Python", "React", "Node.js/Express", "Git/Github", "SQL/PostgreSQL", "Prisma"];
 
 const skillsSection = document.getElementById('Skills');
 
@@ -61,16 +61,17 @@ messageForm.addEventListener('submit', (event) => {
 const projectSection = document.getElementById('Projects');
 const projectList = projectSection.querySelector('ul');
 
+/* Previous code for assignment:
 fetch('https://api.github.com/users/shidoco/repos')
 .then(response => response.json())
 .then(repositories => {
     console.log(repositories);
 
-    for (let i = 0; i < repositories.length; i++) {
+   for (let i = 0; i < repositories.length; i++) {
         const project = document.createElement('li');
         project.innerText = repositories[i].name;
         projectList.appendChild(project);
     }  
 })
 .catch(error => console.error('Github fetch error:', error));
-
+*/
