@@ -38,6 +38,20 @@ const messageForm = document.querySelector('form[name="leave_message"]');
 
 messageForm.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    const { usersName, usersEmail, usersMessage } = event.currentTarget.elements;
+    const subject = encodeURIComponent(`Portfolio message from ${usersName.value}`);
+    const body = encodeURIComponent(
+        `From: ${usersName.value}\nReply to: ${usersEmail.value}\n\n${usersMessage.value}`
+    );
+
+    window.location.href =
+        `mailto:warrensydni@gmail.com?subject=${subject}&body=${body}`;
+});
+
+/* Old Assignment Code
+messageForm.addEventListener('submit', (event) => {
+    event.preventDefault();
     let inputName = event.target.usersName.value;
     let inputEmail = event.target.usersEmail.value;
     let inputMessage = event.target.usersMessage.value;
@@ -56,7 +70,7 @@ messageForm.addEventListener('submit', (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     event.target.reset();
-});
+}); */
 
 const projectSection = document.getElementById('Projects');
 const projectList = projectSection.querySelector('ul');
