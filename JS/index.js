@@ -22,7 +22,7 @@ newFooter.appendChild(copyright);
 
 // Skills
 
-const techSkills = ["Javascript", "HTML", "CSS", "React", "Node.js", "Git/Github"];
+const techSkills = ["Javascript", "HTML", "CSS/TailwindCSS", "Python", "React", "Node.js/Express", "Git/Github", "SQL/PostgreSQL", "Prisma"];
 
 const skillsSection = document.getElementById('Skills');
 
@@ -36,6 +36,20 @@ for (let i = 0; i < techSkills.length; i++) {
  
 const messageForm = document.querySelector('form[name="leave_message"]');
 
+messageForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const { usersName, usersEmail, usersMessage } = event.currentTarget.elements;
+    const subject = encodeURIComponent(`Portfolio message from ${usersName.value}`);
+    const body = encodeURIComponent(
+        `From: ${usersName.value}\nReply to: ${usersEmail.value}\n\n${usersMessage.value}`
+    );
+
+    window.location.href =
+        `mailto:warrensydni@gmail.com?subject=${subject}&body=${body}`;
+});
+
+/* Old Assignment Code
 messageForm.addEventListener('submit', (event) => {
     event.preventDefault();
     let inputName = event.target.usersName.value;
@@ -56,21 +70,22 @@ messageForm.addEventListener('submit', (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     event.target.reset();
-});
+}); */
 
 const projectSection = document.getElementById('Projects');
 const projectList = projectSection.querySelector('ul');
 
+/* Previous code for assignment:
 fetch('https://api.github.com/users/shidoco/repos')
 .then(response => response.json())
 .then(repositories => {
     console.log(repositories);
 
-    for (let i = 0; i < repositories.length; i++) {
+   for (let i = 0; i < repositories.length; i++) {
         const project = document.createElement('li');
         project.innerText = repositories[i].name;
         projectList.appendChild(project);
     }  
 })
 .catch(error => console.error('Github fetch error:', error));
-
+*/
