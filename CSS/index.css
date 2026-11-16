@@ -126,9 +126,24 @@ h2 {
     margin: 0;
     list-style: none;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.projects li,
+.project-video {
+    min-width: 0;
+    max-width: 660px;
+    box-sizing: border-box;
+}
+
+.project-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.weather-app,
 .conlist li {
     margin: 10px;
     padding: 10px;
