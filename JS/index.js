@@ -22,7 +22,7 @@ newFooter.appendChild(copyright);
 
 // Skills
 
-const techSkills = ["Javascript", "HTML", "CSS/TailwindCSS", "Python", "React", "Node.js/Express", "Git/Github", "SQL/PostgreSQL", "Prisma"];
+const techSkills = ["Javascript", "HTML", "CSS/TailwindCSS", "Python", "React", "Node.js/Express", "Git/GitHub", "SQL/PostgreSQL", "Prisma"];
 
 const skillsSection = document.getElementById('Skills');
 
